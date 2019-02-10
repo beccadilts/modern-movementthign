@@ -1,22 +1,409 @@
 body {
-  font-family: Helvetica, Arial, Roboto, sans-serif;
-  font-size: 16px;
+ font-family: 'Montserrat', sans-serif;
+font-size: 32px;
+color: white;
   font-weight: 600;
   line-height: 1.25;
+  text-transform: uppercase;
   margin: 0 auto;
   padding: 0.5em;
   max-width: 100%;
-  width: 100vw;
-  overflow-x: hidden;
-  color: black;
-  background-color: yellow;
-}
-img {
-  max-width: 100%;
-  height: auto;
+
+  
+  background-color: rgb(35,35,35);
+  position: fixed;
 }
 
-video {
+
+.grid-container {
+  display: grid;
+  grid-gap: 10px;
+  padding: 10px;
   max-width: 100%;
-  height: auto;
+  max-height: 100vh;
+  text-align: center;
+  animation-name:fade;
+  animation-delay:20s;
+  animation-duration:5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+
+
+}
+
+.quote-1 {
+  grid-row-start: 1;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ animation-name: ease;
+  animation-duration:3.5s;
+  animation-iteration-count: 6;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+  
+}
+
+@keyframes ease {
+  0% {
+    opacity:0;
+  }
+  50% {
+    opacity:1;
+  }
+100%
+{
+  opacity:.4;
+}
+
+}
+
+@keyframes info {
+
+  0%{
+opacity:0;
+  }
+
+  10%{
+    opacity: 1;
+  }
+
+  90%{
+opacity:1;
+  }
+
+  100%{
+    opacity:0;
+
+  }
+}
+
+@keyframes final {
+  0% {
+    opacity:0;
+  }
+35% {
+  opacity: 1;
+}
+
+  100% {
+    opacity:1;
+  }
+}
+
+
+.quote-2{
+  grid-row-start: 2;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ animation-name: ease;
+  animation-duration:4.5s;
+  animation-iteration-count:4;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+
+  
+
+}
+
+.quote-3{
+  grid-row-start: 1;
+ grid-column-start: 2;
+ grid-column-end: 4;
+ animation-name: ease;
+  animation-duration:8s;
+  animation-iteration-count:3;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-4{
+ grid-row-start: 1;
+ grid-row-end: 2;
+ animation-name: ease;
+  animation-duration:6s;
+  animation-iteration-count: 4;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-5{
+  grid-row-start: 1;
+ grid-column-start: 5;
+ grid-column-end: 6;
+ animation-name: ease;
+  animation-duration:7s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-6{
+  grid-row-start:2 ;
+  grid-row-end: 3;
+ grid-column-start:2;
+ grid-column-end:3 ;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 8;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+.quote-7{
+ grid-row-start: 2;
+ grid-column-start:5 ;
+ grid-column-end: 5 ;
+ animation-name: ease;
+  animation-duration:4.5s;
+  animation-iteration-count:4;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-8{
+  grid-row-start: 3;
+ grid-column-start:1 ;
+ grid-column-end: 1;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 8;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+.quote-9{
+  grid-row-start:2 ;
+ grid-column-start:3 ;
+ grid-column-end: 4;
+ animation-name: ease;
+  animation-duration:2s;
+  animation-iteration-count:11;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-10{
+  grid-row-start:3;
+ grid-column-start:2 
+ grid-column-end:2 ;
+ animation-name: ease;
+  animation-duration:7s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-11{
+  grid-row-start:3;
+ grid-column-start:3;
+ grid-column-end:3;
+ animation-name: ease;
+  animation-duration:4.5s;
+  animation-iteration-count:4;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-12{
+  grid-row-start:3 ;
+ grid-column-start:4 ;
+ grid-column-end:4 ;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 8;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+.quote-13{
+  grid-row-start:3 ;
+ grid-column-start: 5;
+ grid-column-end: 5;
+ animation-name: ease;
+  animation-duration:2s;
+  animation-iteration-count:11;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-14{
+  grid-row-start:4;
+ grid-column-start:3;
+ grid-column-end:1;
+ animation-name: ease;
+  animation-duration:4.5s;
+  animation-iteration-count:4;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-15{
+  grid-row-start:6;
+ grid-column-start:1;
+ grid-column-end: 1;
+ animation-name: ease;
+  animation-duration:7s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-16{
+  grid-row-start:6;
+ grid-column-start:2;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:2s;
+  animation-iteration-count:11;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-17{
+  grid-row-start:4;
+ grid-column-start:3;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:7s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-18{
+  grid-row-start:2;
+ grid-column-start:4;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:4.5s;
+  animation-iteration-count:4;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-19{
+  grid-row-start:4;
+ grid-column-start:4;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:2s;
+  animation-iteration-count:11;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+.quote-20{
+  grid-row-start:5;
+ grid-column-start:1;
+ grid-column-end:3;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 8;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+ }
+.quote-21{
+  grid-row-start: ;
+ grid-column-start: ;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:7s;
+  animation-iteration-count: 3;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-22{
+  grid-row-start:4;
+ grid-column-start: 5;
+ grid-column-end: ;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 7;
+  animation-fill-mode: forwards;
+  
+   animation-timing-function: ease-in;
+}
+.quote-23{
+  grid-row-start:5;
+ grid-column-start:4;
+ grid-column-end:6;
+ animation-name: ease;
+  animation-duration:3s;
+  animation-iteration-count: 8;
+  animation-fill-mode: forwards;
+   animation-timing-function: ease-in;
+}
+
+.quote-24{
+  grid-row-start:6;
+ grid-column-start:3;
+ grid-column-end:6;
+animation-name: ease;
+  animation-duration:11s;
+  animation-iteration-count:2;
+  animation-fill-mode: forwards;
+   animation-timing-function:ease-in-out;
+}
+
+.info-1
+{
+z-index: -1;
+  grid-column-start:3;
+  grid-column-end:6;
+  grid-row-start:6;
+  grid-row-end:8;
+  opacity: 0;
+  animation-name: info;
+  animation-duration:11s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 25s;
+  animation-timing-function:ease-in-out;
+}
+
+.info-2
+{
+z-index: -1;
+  grid-column-start:3;
+  grid-column-end:6;
+  grid-row-start:6;
+  grid-row-end:8;
+  opacity: 0;
+  animation-name: info;
+  animation-duration:20s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 39s;
+  animation-timing-function:ease-in;
+}
+
+.info-3
+{
+z-index: -1;
+  grid-column-start:3;
+  grid-column-end:6;
+  grid-row-start:6;
+  grid-row-end:8;
+  opacity: 0;
+  animation-name: info;
+  animation-duration:18s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 60s;
+  animation-timing-function:ease-in;
+}
+
+.info-final
+{
+z-index: -1;
+  grid-column-start:3;
+  grid-column-end:6;
+  grid-row-start:6;
+  opacity: 0;
+  animation-name: final;
+  animation-duration:18s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+  animation-delay: 75s;
+  animation-timing-function:ease-in;
+}
+
+.info-final p {
+  font-size: 30px;
+  font-weight: 800;
+}
+p {
+  z-index:-1;
+  text-transform: initial;
+  font-weight: 500;
+  font-size: 20px;
 }
