@@ -31,18 +31,6 @@ color: white;
 
 }
 
-.quote-1 {
-  grid-row-start: 1;
- grid-column-start: 1;
- grid-column-end: 2;
- animation-name: ease;
-  animation-duration:3.5s;
-  animation-iteration-count: 6;
-  animation-fill-mode: forwards;
-   animation-timing-function:ease-in-out;
-  
-}
-
 @keyframes ease {
   0% {
     opacity:0;
@@ -52,7 +40,7 @@ color: white;
   }
 100%
 {
-  opacity:.4;
+  opacity:0.4;
 }
 
 }
@@ -90,6 +78,18 @@ opacity:1;
   }
 }
 
+.quote-1 {
+  grid-row-start: 1;
+ grid-column-start: 1;
+ grid-column-end: 2;
+ animation-name: ease;
+  animation-duration:3.5s;
+  animation-iteration-count: 7;
+  animation-fill-mode: forwards;
+  animation-direction:alternate;
+   animation-timing-function:ease-in-out;
+  
+}
 
 .quote-2{
   grid-row-start: 2;
@@ -97,8 +97,9 @@ opacity:1;
  grid-column-end: 2;
  animation-name: ease;
   animation-duration:4.5s;
-  animation-iteration-count:4;
+  animation-iteration-count:5;
   animation-fill-mode: forwards;
+  animation-direction:alternate;
    animation-timing-function:ease-in-out;
 
   
@@ -113,6 +114,7 @@ opacity:1;
   animation-duration:8s;
   animation-iteration-count:3;
   animation-fill-mode: forwards;
+  animation-direction:alternate;
    animation-timing-function:ease-in-out;
 }
 .quote-4{
@@ -120,10 +122,10 @@ opacity:1;
  grid-row-end: 2;
  animation-name: ease;
   animation-duration:6s;
-  animation-iteration-count: 4;
+  animation-iteration-count: 5;
   animation-fill-mode: forwards;
-  
-   animation-timing-function: ease-in;
+  animation-direction:alternate;
+   animation-timing-function:ease-in-out;
 }
 .quote-5{
   grid-row-start: 1;
@@ -133,8 +135,8 @@ opacity:1;
   animation-duration:7s;
   animation-iteration-count: 3;
   animation-fill-mode: forwards;
-  
-   animation-timing-function: ease-in;
+ animation-direction:alternate; 
+   animation-timing-function:ease-in-out;
 }
 .quote-6{
   grid-row-start:2 ;
@@ -143,9 +145,10 @@ opacity:1;
  grid-column-end:3 ;
  animation-name: ease;
   animation-duration:3s;
-  animation-iteration-count: 8;
+  animation-iteration-count: 7;
   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+  animation-direction:alternate;
+   animation-timing-function:ease-in-out;
 }
 .quote-7{
  grid-row-start: 2;
@@ -153,7 +156,8 @@ opacity:1;
  grid-column-end: 5 ;
  animation-name: ease;
   animation-duration:4.5s;
-  animation-iteration-count:4;
+  animation-iteration-count:7;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -163,9 +167,10 @@ opacity:1;
  grid-column-end: 1;
  animation-name: ease;
   animation-duration:3s;
-  animation-iteration-count: 8;
+  animation-iteration-count: 9;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-9{
   grid-row-start:2 ;
@@ -174,6 +179,7 @@ opacity:1;
  animation-name: ease;
   animation-duration:2s;
   animation-iteration-count:11;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -184,9 +190,10 @@ opacity:1;
  animation-name: ease;
   animation-duration:7s;
   animation-iteration-count: 3;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
   
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-11{
   grid-row-start:3;
@@ -194,7 +201,8 @@ opacity:1;
  grid-column-end:3;
  animation-name: ease;
   animation-duration:4.5s;
-  animation-iteration-count:4;
+  animation-iteration-count:5;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -204,9 +212,10 @@ opacity:1;
  grid-column-end:4 ;
  animation-name: ease;
   animation-duration:3s;
-  animation-iteration-count: 8;
+  animation-iteration-count: 9;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-13{
   grid-row-start:3 ;
@@ -215,6 +224,7 @@ opacity:1;
  animation-name: ease;
   animation-duration:2s;
   animation-iteration-count:11;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -224,7 +234,8 @@ opacity:1;
  grid-column-end:1;
  animation-name: ease;
   animation-duration:4.5s;
-  animation-iteration-count:4;
+  animation-iteration-count:5;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -235,17 +246,19 @@ opacity:1;
  animation-name: ease;
   animation-duration:7s;
   animation-iteration-count: 3;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
   
-   animation-timing-function: ease-in;
-}
+   animation-timing-function:ease-in-out;
+ }
 .quote-16{
   grid-row-start:6;
  grid-column-start:2;
  grid-column-end: ;
  animation-name: ease;
-  animation-duration:2s;
-  animation-iteration-count:11;
+  animation-duration:3s;
+  animation-iteration-count:9;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -256,9 +269,10 @@ opacity:1;
  animation-name: ease;
   animation-duration:7s;
   animation-iteration-count: 3;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
   
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-18{
   grid-row-start:2;
@@ -266,7 +280,8 @@ opacity:1;
  grid-column-end: ;
  animation-name: ease;
   animation-duration:4.5s;
-  animation-iteration-count:4;
+  animation-iteration-count:5;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -277,6 +292,7 @@ opacity:1;
  animation-name: ease;
   animation-duration:2s;
   animation-iteration-count:11;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -286,9 +302,10 @@ opacity:1;
  grid-column-end:3;
  animation-name: ease;
   animation-duration:3s;
-  animation-iteration-count: 8;
+  animation-iteration-count:9;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
  }
 .quote-21{
   grid-row-start: ;
@@ -297,9 +314,10 @@ opacity:1;
  animation-name: ease;
   animation-duration:7s;
   animation-iteration-count: 3;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
   
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-22{
   grid-row-start:4;
@@ -308,9 +326,10 @@ opacity:1;
  animation-name: ease;
   animation-duration:3s;
   animation-iteration-count: 7;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
   
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 .quote-23{
   grid-row-start:5;
@@ -318,9 +337,10 @@ opacity:1;
  grid-column-end:6;
  animation-name: ease;
   animation-duration:3s;
-  animation-iteration-count: 8;
+  animation-iteration-count: 9;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
-   animation-timing-function: ease-in;
+   animation-timing-function:ease-in-out;
 }
 
 .quote-24{
@@ -328,8 +348,9 @@ opacity:1;
  grid-column-start:3;
  grid-column-end:6;
 animation-name: ease;
-  animation-duration:11s;
-  animation-iteration-count:2;
+  animation-duration:18s;
+  animation-iteration-count:1;
+  animation-direction:alternate;
   animation-fill-mode: forwards;
    animation-timing-function:ease-in-out;
 }
@@ -362,7 +383,7 @@ z-index: -1;
   animation-duration:20s;
   animation-iteration-count: 1;
   animation-fill-mode: forwards;
-  animation-delay: 39s;
+  animation-delay: 41s;
   animation-timing-function:ease-in;
 }
 
